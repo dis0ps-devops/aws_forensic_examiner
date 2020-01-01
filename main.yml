@@ -1,0 +1,25 @@
+- name: Prep forensics examiner box
+  hosts: all
+
+  tasks: 
+    - name: Pulling in variable files
+      include_vars:
+        dir: ./vars
+
+    - name: installing forensics packages
+      apt:
+        name: "{{ forensic_packages }}"
+        state: latest
+        force: yes
+        update_cache: yes
+        autoclean: yes
+        autoremove: yes
+      
+    - name: Adding forensic users
+      include_tasks:  tasks/provision_users.yml
+      with_items: "{{ forensic_users }}"
+
+    - name: Adding motd file
+      copy: 
+        src: files/motd
+        dest: /etc/motd

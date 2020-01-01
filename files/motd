@@ -1,0 +1,19 @@
+  _____                              _               
+ |  ___|___   _ __  ___  _ __   ___ (_)  ___         
+ | |_  / _ \ | '__|/ _ \| '_ \ / __|| | / __|        
+ |  _|| (_) || |  |  __/| | | |\__ \| || (__         
+ |_|   \___/ |_|   \___||_| |_||___/|_| \___|        
+  _____                         _                    
+ | ____|__  __ __ _  _ __ ___  (_) _ __    ___  _ __ 
+ |  _|  \ \/ // _` || '_ ` _ \ | || '_ \  / _ \| '__|
+ | |___  >  <| (_| || | | | | || || | | ||  __/| |   
+ |_____|/_/\_\\__,_||_| |_| |_||_||_| |_| \___||_|   
+                                                     
+Ubuntu 18.04.3 LTS with forensic-all metapackage
+
+Main Tools:
+* ewf-tools - Encase EWF format tools
+* sleuthkit - disk and filesystem forensic tools
+* plaso (log2timeilne) - timeliner and artifact parser
+* volatility - Memory Forensics
+

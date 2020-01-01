@@ -1,0 +1,2 @@
+forensics ansible_host=192.168.60.10 ansible_port=22 ansible_user=vagrant ansible_private_key_file=~/.ssh/ansible_private_key
+
